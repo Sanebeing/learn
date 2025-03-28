@@ -39,6 +39,9 @@ select {
 
         /* border */
         --border:1px solid #222;
+
+        /* shadow */
+        --shadow:3px 2px 3px rgb(0, 0, 0);
 }
 
 /* general */
@@ -80,6 +83,7 @@ header,footer{
     width: 100px;
     height: auto;
     margin: var(--header-margin);
+    margin-bottom: 0;
 }
 
 .header__h1{
@@ -91,12 +95,22 @@ header,footer{
     font-size:2rem;
 }
 
-.header__nav{
-    background-color: rgb(249, 247, 247);
-    color:#222;
+.header__hr{
+    width: 80%;
+    color: white;
+    margin: auto;
+}
+
+/* .header__nav{
+    color:whitesmoke;
     width: 100%;
     border-bottom: var(--border);
     padding: var(--header-pad);
+} */
+
+.header__nav{
+    color: white;
+    text-shadow: var(--shadow);
 }
 
 .header__ul{
@@ -104,19 +118,18 @@ header,footer{
     flex-flow: row nowrap;
     justify-content: space-evenly;
     list-style-type: none;
-    padding: var(--header-pad);
+    /* padding: var(--header-pad); */
 }
 
 .header__ul li a:any-link{
     text-decoration: none;
-    color: var(--header-light);
+    color: white;
     font-weight: bold;
 }
 
 .header__ul li a:hover,
 .header__ul li a:focus{
     font-weight: bolder;
-    color: var(--header-bg);
     display: inline-block;
     /* transform-origin: center; */
     animation: big 0.7s ease-in-out forwards;
@@ -176,15 +189,15 @@ header,footer{
 
 /* utlitlies */
 
-.empty{
-    min-height: 35px;
-    display: block;
-}
-
 .block{
     display: block;
     width: 65%;
-    margin: 2rem 100px;
+    margin: 7rem 100px;
+    padding: 1rem;
+}
+
+.capital{
+    text-transform: uppercase;
 }
 
 /* main */
@@ -192,18 +205,38 @@ header,footer{
 .main{
     display: flex;
     flex-flow: column nowrap;
-    
 }
 
 .main__bgimg{
     background-color: black;
     background-image: url('./images/garagebg.jpg');
     background-size: cover;
+    background-position:right;
     height: 700px;
     margin: 3rem 0 2rem 0;
 }
 
-.main__p,.main__h1{
-    color: whitesmoke;
+.main__h1{
+    color: rgb(244, 244, 244);
+    font-size: 2.5rem;
+    text-transform:uppercase;
+    text-shadow: var(--shadow);
+    font-weight: bolder;
+    margin: 1px;
+    padding: 1px;
 }
 
+.main__p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(227, 227, 227);
+    margin: 1px;
+    padding: 1px;
+}
+
+.main__h1-right{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
+}
