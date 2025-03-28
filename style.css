@@ -174,10 +174,16 @@ header,footer{
     display: inline;
 }
 
-.footer__p{
+.footer__a{
     font-size: 1rem;
     align-self: center;
     font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+.footer__a a:any-link{
+    color: white;
 }
 
 .footer__p-last{
