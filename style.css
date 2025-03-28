@@ -197,7 +197,7 @@ header,footer{
 
 .main__bgimg{
     background-color: black;
-    background-image: url('../htmlimg/garagebg.jpg');
+    background-image: url('./images/garagebg.jpg');
     background-size: cover;
     height: 700px;
     margin: 3rem 0 2rem 0;
