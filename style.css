@@ -41,7 +41,7 @@ select {
         --border:1px solid #222;
 
         /* shadow */
-        --shadow:3px 2px 3px rgb(0, 0, 0);
+        --shadow:0.2vh 0.2vh 0.2vh rgb(83, 83, 83);
 }
 
 /* general */
@@ -57,12 +57,17 @@ body{
 main{
     flex:1;
     background-color: rgb(0, 0, 0);
+    /* background-color: #2b2b2b; */
     color: white;
 }
 
 header,footer{
     background-color: var(--header-bg);
     color: var(--header-color);
+}
+
+.inline{
+    display: inline;
 }
 
 /* header */
@@ -257,4 +262,229 @@ header,footer{
     margin: 0.5rem;
     border-left: 2px solid rgb(255, 255, 255);
     width: 20%;
+}
+
+/* service */
+
+.hero{
+    background-image: url(./images/servicebg.png);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 305vh;
+    padding: 1rem;
+    position: relative;
+}
+
+.test{
+    margin: 2rem auto;
+    width: 54vw;
+    height: 15vh;
+    /* border: #222 solid 2px; */
+    border-radius: 2vh;
+    background-color: hsl(0, 0%, 81%);
+    color: rgb(0, 0, 0);
+    place-content: center;
+    padding: 2vh;
+    text-transform: capitalize;
+    /* text-align: center; */
+    position: relative;
+}
+
+.test__img-1{
+    margin: 1vh;
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.test__img-2{
+    margin: 1.5vh;
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.service-1{
+    position: absolute;
+    background-image: url("./images/carlift.png");
+    background-size: cover;
+    top: 35vh;
+    left: 20vw;
+    width: 40vw;
+    height: 55vh;
+    border: rgb(28, 28, 28) solid 2px;
+    border-radius: 3vh;
+    /* padding: 3vh; */
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.service__block{
+    /* margin-top: 3vh; */
+    background-color: hsla(0, 0%, 0%, 0.7);
+    padding: 2rem;
+    width: 40vw;
+    height: 55vh;
+    place-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 3vh;
+}
+
+.service__block-h1{
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+.service__block-ul{
+    font-size: 1.5vw;
+    text-align: left;
+    margin: 0.5vw;
+}
+
+.service__block-p{
+    font-size: 1vw;
+}
+
+.service__block-h{
+    font-size: 2vw;
+}
+
+.service-2{
+    position: absolute;
+    background-image: url("./images/preventative.jpg");
+    background-size: cover;
+    top: 100vh;
+    right: 20vw;
+    width: 40vw;
+    height: 55vh;
+    border: rgb(28, 28, 28) solid 2px;
+    border-radius: 3vh;
+    /* padding: 3vh; */
+    text-align: center;
+}
+
+.service-3{
+    position: absolute;
+    background-image: url("./images/tire.jpg");
+    background-size: cover;
+    top: 165vh;
+    left: 20vw;
+    width: 40vw;
+    height: 55vh;
+    border: rgb(28, 28, 28) solid 2px;
+    border-radius: 3vh;
+    /* padding: 3vh; */
+    text-align: center;
+}
+
+.service-4{
+    position: absolute;
+    background-image: url("./images/diagnostics.jpg");
+    background-size: cover;
+    top: 230vh;
+    right: 20vw;
+    width: 40vw;
+    height: 55vh;
+    border: rgb(28, 28, 28) solid 2px;
+    border-radius: 3vh;
+    /* padding: 3vh; */
+    text-align: center;
+}
+
+.h1__contactus{
+    background-color: #2f2f2f;
+    position: absolute;
+    bottom:4vh;
+    left: 23vw;
+    width: 50vw;
+    text-align: center;
+    color: aliceblue;
+    margin: 1rem auto;
+    font-size: 1vw;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+/* about */
+
+.about{
+    background-color: #2b2b2b;
+    color: #ddd;
+    padding: 4vh 4vw;
+    word-spacing: 0.2vw;
+    font-weight: 500;
+}
+
+.about__block{
+    background-color: hsl(0, 0%, 10%);
+    border: #ddd 0.1vh solid;
+    border-radius: 2vh;
+    width: 75vw;
+    place-content: center;
+    margin:2vh auto;
+    padding: 2vw;
+}
+
+.about__block-2{
+    font-size: 1.1vw;
+    width: 70vw;
+}
+
+.about__flex{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 72vw;
+    margin: 2vh auto;
+    font-size: 1vw;
+}
+
+.about__flex-block{
+    background-color: hsl(0, 0%, 10%);
+    margin:1vh 1vw;
+    width: 45vw;
+    padding: 2vw;
+    border-radius: 2vh;
+    border: #ddd 0.1vh solid;
+    /* place-content: center; */
+}
+
+.about__h1{
+    margin: 0.5vh 0.5vw;
+    text-align: center;
+    text-shadow: var(--shadow);
+    /* padding: 1vh 1vw; */
+}
+
+.about__heading{
+    margin: 0.5vh 0.5vw;
+    text-shadow: var(--shadow);
+}
+
+.about__link:any-link{
+    color:#3498db;
+    text-decoration:none;
+    font-weight: 900;
+}
+
+.about__link:hover,.about__link:focus{
+    color:rgb(36, 102, 147) ;
+}
+
+.about__block-last{
+    background-color: hsl(0, 0%, 10%);
+    border-radius: 2vh;
+    border: #ddd 0.1vh solid;
+    font-size: 1.1vw;
+    width: 55vw;
+    margin: 2vh auto;
+    padding: 1vw;
+    place-content: center;
+    text-align: center;
 }
